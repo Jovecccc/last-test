@@ -1,0 +1,44 @@
+*{
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.iconfont icon-weizhi{
+    font-family:"iconfont";
+    font-size: 32px;
+}
+#root{
+    background-color: #f4f4f4;
+}
+#top{
+    padding-top: 1rem;
+    height: 20rem;
+    background-image: url(image/cloud.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    margin-bottom: 0.1rem;
+}
+.location{
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1rem;
+}
+
+.temperature{
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 3.5rem;
+}
+.climate{
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.humidity{
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.top_tips{
+    text-align: center;
+}

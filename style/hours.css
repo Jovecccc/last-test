@@ -1,0 +1,31 @@
+#hours{
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    border-bottom: 0.1rem solid #e4e4e4;
+    margin-bottom: 0.1rem;
+    padding-top: 0.1rem;
+    overflow-x: scroll
+}
+.scroll{
+    width: 400%;
+}
+.items{
+    width: 100%;
+    list-style: none;
+    display: block;
+    margin-block-start: 1rem;
+    margin-block-end: 1rem;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 1.25rem;
+    overflow-x: scroll
+}
+.item{
+    float: left;
+    text-align: center;
+    width: 4.16666%;
+}
+.i_time{
+    font-size: 0.8rem;
+}
