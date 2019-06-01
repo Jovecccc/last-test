@@ -89,3 +89,16 @@ var dataupdata = function (obj){
 	}
 
 }
+function update(){
+	var xhr = new XMLHttpRequest();
+	xhr.open("get","https://www.tianqiapi.com/api/?version=v1",true);
+	xhr.send();
+	xhr.onreadystatechange = function (){
+		if(xhr.readyState==4 && xhr.status==200){
+			var apidata = JSON.parse(xhr.responseText);	
+			dataupdata(apidata)
+			
+		}
+	}
+}
+setInterval(update(),10000);
