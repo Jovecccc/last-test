@@ -34,11 +34,16 @@ var dataupdata = function (obj){
 	}
 	if(24-obj.data[0].hours.length-obj.data[1].hours.length>8){
 		for(i=0; i<obj.data[2].hours.length; i++){
-			k=i+24-obj.data[0].hours.length-obj.data[1].hours.length;
+			k=i+obj.data[0].hours.length+obj.data[1].hours.length;
 			document.getElementsByClassName("i_time")[k].innerHTML = obj.data[2].hours[i].day;
 		}
 		for(i=0; i<24-obj.data[2].hours.length-obj.data[1].hours.length-obj.data[0].hours.length; i++){
 			document.getElementsByClassName("i_time")[i+obj.data[2].hours.length+obj.data[1].hours.length+obj.data[0].hours.length].innerHTML = obj.data[3].hours[i].day;
+		}
+	}else{
+		for(i=0; i<obj.data[2].hours.length; i++){
+			k=i+obj.data[0].hours.length+obj.data[1].hours.length;
+			document.getElementsByClassName("i_time")[k].innerHTML = obj.data[2].hours[i].day;
 		}
 	}
 
